@@ -71,7 +71,7 @@
             <button id="short-break">Short Break</button>
             <button id="long-break">Long Break</button>
         </div>
-		<h1>25:00</h1>
+		<h1>52:00</h1>
 		<button id="start">Start</button>
 		<button id="reset">Reset</button>
         <div class="volume-control">
@@ -93,7 +93,7 @@
         const volumeControl = document.querySelector('#volume');
         const alarm = document.querySelector('#alarm');
 
-		let time = 1500;
+		let time = 3120;
 		let countdown;
 
 		function updateTimer() {
@@ -135,7 +135,7 @@
 
 		longBreakButton.addEventListener('click', () => {
 			clearInterval(countdown);
-			time = 600;
+			time = 1020;
 			updateTimer();
 		});
 
